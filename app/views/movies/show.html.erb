@@ -5,6 +5,10 @@
 <div class="row">
   <div class="col-md-12 mb-2">
     <dl class="dl-horizontal">
+      <dt>Image</dt>
+      <img src="<%= @movie.image_url %>"/>
+
+
       <dt>Title</dt>
       <dd><%= @movie.title %></dd>
 
@@ -17,11 +21,9 @@
       <dt>Description</dt>
       <dd><%= @movie.description %></dd>
 
-      <dt>Image url</dt>
-      <dd><%= @movie.image_url %></dd>
 
       <dt>Director</dt>
-      <dd><%= @movie.director_id %></dd>
+      <dd><%= @director.name %></dd>
 
     </dl>
 

@@ -1,12 +1,16 @@
 class MoviesController < ApplicationController
   def index
     @movies = Movie.all
-
-    render("movies/index.html.erb")
+    
+        render("movies/index.html.erb")
   end
 
   def show
     @movie = Movie.find(params[:id])
+
+    @movie_director_id=@movie.director_id
+    @director = Director.find(@movie_director_id)
+
 
     render("movies/show.html.erb")
   end
