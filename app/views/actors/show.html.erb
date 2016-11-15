@@ -35,6 +35,7 @@
   </div>
 </div>
 
+<dd>Roles</dd>
 <ul>
   <%Character.where(:actor_id=>@actor.id).each do |character|%>
   <li><a href="/characters/<%=character.id%>"><%=character.name%></a></li>
