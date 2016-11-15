@@ -36,6 +36,9 @@ group :development, :test do
   gem "dotenv-rails"
   gem "factory_girl_rails"
   gem "rspec-rails"
+
+gem "starter_generators", :git => "http://github.com/raghubetina/starter_generators.git"
+
 end
 
 group :development do
